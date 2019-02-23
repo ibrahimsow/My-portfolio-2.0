@@ -1,0 +1,20 @@
+.titre-page-contact{
+    height: 100vh;
+    h2{
+        font-size: 5rem;
+        font-weight: 800;
+        letter-spacing: 10px;
+        @media (max-width: 575px) { 
+            font-size: 3rem;
+         }
+         @media (min-width: 576px) and (max-width: 767px) { 
+            font-size: 3.5rem;
+        }
+        @media (min-width: 768px) and (max-width: 991px) { 
+            font-size: 4rem;
+           }
+           @media (min-width: 992px) and (max-width: 1199px) { 
+            font-size: 4rem;
+        }
+    }
+}

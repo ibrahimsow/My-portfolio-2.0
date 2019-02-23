@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top-of-dash">
+        <a class="navbar-brand" href="{{ path('home') }}">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('dashboard') }}">Dashboard<span class="sr-only">(current)</span></a>
+            </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="{{ path('dashboard_all_projets') }}">Projets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Languages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Outils</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Newsletter</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+          <a href="#top-of-dash"><i class="fas fa-chevron-up"></i></a> 
+
+
+    <section class="mt-5 p-5 projet-dash d-flex flex-column justify-content-center align-items-center">
+
+        <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500"> 
+            <a href="{{ projet.url }}" target="blank">
+                <img src="{{ projet.image }}" alt="projet" class="img-fluid">
+            </a> 
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up">{{ projet.title }}</h4>
+                    <p>{{ projet.createdAt | date('d/m/Y') }}</p>
+                    {{ projet.description | raw }}
+                    <a data-aos="fade-up" href="{{ projet.git }}" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-gitlab"></i> <span class="text-git">Voir le projet sur gitLab</span></a>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, facilis quo? Temporibus perferendis perspiciatis ducimus, placeat delectus a eligendi porro accusantium sapiente numquam? Non dolorum, quis blanditiis odit dolorem, amet beatae sint nesciunt porro quos doloremque perferendis perspiciatis. Repellat sit tenetur, asperiores fuga odit et minus ab ipsam perferendis dolorem.</p>
+                   <p>Ipsum officia vel libero corporis, nostrum perferendis laboriosam accusantium alias quas aliquid adipisci reiciendis debitis, similique atque quo corrupti mollitia id unde illum architecto quae cumque soluta tempora nisi. Minima consequatur sint non molestias eos quam deleniti, iusto suscipit optio! Quo ipsum ab laudantium labore atque possimus impedit officia totam!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

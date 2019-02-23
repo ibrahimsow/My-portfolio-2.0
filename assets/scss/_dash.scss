@@ -1,0 +1,28 @@
+.accueil-dash{
+    height: 100vh;
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+.projet-dash{
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+    min-height: 100vh;
+}
+.newprojet-dash{
+    background: linear-gradient(to right, #e1f5fe, #b3e5fc);
+    min-height: 100vh;
+}
+.ajout-projet{
+    position: fixed;
+    top: 10vh;
+    right: 5vw;
+   
+}
+.btn{
+    a{
+        color: inherit;
+        text-decoration: none;
+        &:hover{
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}

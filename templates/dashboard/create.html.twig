@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formProjet 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+<nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark" id="top-of-dash">
+        <a class="navbar-brand" href="{{ path('home') }}">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path('dashboard') }}">Dashboard<span class="sr-only">(current)</span></a>
+            </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="{{ path('dashboard_all_projets') }}">Projets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Languages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Outils</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Newsletter</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+          <a href="#top-of-dash"><i class="fas fa-chevron-up"></i></a> 
+
+
+    <section class="mt-5 p-5 newprojet-dash d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+                
+                {{ form_start(formProjet) }}
+
+                {{ form_widget(formProjet) }}
+
+                <button type="submit" class="btn btn-success">
+                    {% if editMode %}
+                    Enregistrer les modifications
+                    {% else %}
+                    Ajouter le projet
+                    {% endif %}
+                
+                </button>
+
+                {{ form_end(formProjet) }}
+        </div>
+    </section>
+{% endblock %}

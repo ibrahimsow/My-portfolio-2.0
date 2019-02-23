@@ -1,0 +1,80 @@
+  <section class="section-projet container-fluid flex-column d-flex justify-content-center align-items-center" id="projet">
+        <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500"> 
+            <a href="https://ibrahims.promo-23.codeur.online/site_votre_passion_votre_job/" target="blank"><img src="{{ asset('/build/static/vpvj-pc.png') }}" alt="projet" class="img-fluid"></a> 
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up">Votre Passion | Votre Job</h4>
+                    <p class="language">
+                        Language et outils utilisés : <br> Html | Css/Sass | Js | Php | Git.
+                    </p> 
+                    <p data-aos="fade-up">Je me suis lancé dans un projet personnel pour expérimenter les outils appris pendant la formation. Ce site aura pour but de connecter les employeurs avec des personnes passionnées. Les utilisateurs devrons accéder à leurs comptes pour utiliser le site et publier leurs profils ou leurs annonces. 
+                    </p> 
+                    <a data-aos="fade-up" href="https://gitlab.com/Ybara/site_votre_passion_votre_job" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-gitlab"></i> <span class="text-git">Voir le projet sur gitLab</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500">
+            <a href="https://ibrahims.promo-23.codeur.online/blueasy/" target="blank"><img src="{{ asset('/build/static/blueasy-pc.png') }}" alt="projet" class="img-fluid"></a> 
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up"> Integration de maquette</h4>
+                    <p class="language">
+                    Language et outils utilisés : <br> Html | Css/Sass | Js | Photoshop. 
+                    </p>
+                    <p data-aos="fade-up"> Ce projet vise à intégrer une maquette créer sur photoshop en site web tout en respectant les dimensions et détails du fichier psd. 
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500">
+            <a href="https://ibrahims.promo-23.codeur.online/access_movie/" target="blank"><img src="{{ asset('/build/static/access_movie-pc.png') }}" alt="projet" class="img-fluid"></a> 
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up"> Access Movie</h4>
+                    <p class="language">
+                        Language et outils utilisés : <br> Html | Css/Sass | Js | Php | Git | Mysql | MVC.
+                    </p> 
+                    <p data-aos="fade-up"> Ce projet est un annuaire de films. Nous avons mis en place une base de données pour répertorier les films, les réalisateurs, les acteurs et les années de sortie. Ce site peut servir à renseigner les utilisateurs sur la sortie d'un film, l'utilisateur a la possibilité de lire le descriptif et voir la bande annonce du film. 
+                    </p> 
+                    <a data-aos="fade-up" href="https://github.com/ibrahimsow/access_movie/" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-github"></i> <span class="text-git">Voir le projet sur gitHub</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500">
+        <a href="https://promo-23.codeur.online/blog/" target="blank"><img src="{{ asset('/build/static/run-pc.jpg') }}" alt="projet" class="img-fluid"></a>  
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up">Article Wordpress</h4>
+                    <p data-aos="fade-up"> Ce site est le blog de la promotion de ma formation, nous y publions des articles sur le digital et nous faisons de la veille téchnologique.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500">
+            <a href="https://ibrahims.promo-23.codeur.online/explorateur-de-fichier-php/" target="blank"><img src="{{ asset('/build/static/explorateur-pc.png') }}" alt="projet" class="img-fluid"></a> 
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up"> Explorateur de fichiers</h4>
+                    <p class="language">
+                            Language et outils utilisés : <br> Html | Css/Sass | Js | Php | Git | MVC.
+                    </p>  
+                    <p data-aos="fade-up">Ce projet est un explorateur de fichier. Il permet de naviguer et de lister le contenu des dossiers. 
+                    </p> 
+                    <a data-aos="fade-up" href="https://gitlab.com/Louya/explorateur-de-fichier-php" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-gitlab"></i> <span class="text-git">Voir le projet sur gitLab</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500">
+            <a href="https://ibrahims.promo-23.codeur.online/transfert/" target="blank"><img src="{{ asset('/build/static/files-walk-pc.png') }}" alt="projet" class="img-fluid"></a> 
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <h4 data-aos="fade-up">Files Walk</h4>
+                    <p class="language">
+                        Language et outils utilisés :  <br> Html | Css/Sass | Js | Php | Git | MVC.
+                    </p> 
+                    <p data-aos="fade-up">Ce site permet de transferer des fichiers. Il suffi de renseigner votre e-mail ainsi que celui du destinataire d'entrer un message et de charger votre fichier. Retrouvez File Walk sur Pc Tablette et Mobile. 
+                    </p> 
+                    <a data-aos="fade-up" href="https://github.com/ibrahimsow/transfer" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-github"></i> <span class="text-git">Voir le projet sur gitHub</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
