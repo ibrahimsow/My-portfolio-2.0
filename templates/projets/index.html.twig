@@ -58,20 +58,20 @@
                 <h3 class="text-center" data-aos="zoom-in" data-aos-duration="2000" >Sites Web | Maquettes | Articles</h3>
                 <a class="down" href="#projet"><i class="fas fa-chevron-down"></i></a> 
         </div>
-        <section class="section-projets container d-flex flex-wrap">
+        <section class="section-projets p-5 container d-flex flex-wrap justify-content-center">
              {% for projet in projets %}
-        <div class="" data-aos="fade-up" data-aos-duration="1500"> 
+        <div class="m-5" data-aos="fade-up" data-aos-duration="1500"> 
             <a href="{{ projet.url }}" target="blank">
                 <img src="{{ projet.image }}" alt="projet" class="img-projet">
             </a> 
-            {# <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
                 <div>
                     <h4 data-aos="fade-up">{{ projet.title }}</h4>
                     <p>{{ projet.createdAt | date('d/m/Y') }}</p>
                     <p>{{ projet.description | raw }}</p>
                     <a data-aos="fade-up" href="{{ projet.git }}" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-github"></i><span class="text-git">Voir le projet sur github</span></a>
                 </div>
-            </div> #}
+            </div>
         </div>
         {% endfor %}
         </section>
