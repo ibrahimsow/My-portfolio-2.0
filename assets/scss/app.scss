@@ -91,7 +91,7 @@ body{
       
       .scrolled.mynav {
         height: 100px; 
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.54);
         transition: 0.5s ease;
       
       }
@@ -102,6 +102,16 @@ body{
         transition: 0.5s ease;
       }
       
+      .scrolled.mynav .nav .item a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 1.2rem;
+        &:hover{
+            text-decoration: none;
+            color: #BD3030;
+        }
+      }
       .scrolled.mynav .nav .item .active {
         display: inline-block;
         background-color: #ffffff;
@@ -122,7 +132,7 @@ body{
     }
     .section-titre{
             height: 100vh;
-            background: url(/build/static/bg-accueil2.jpeg);
+            background: url(/build/static/bg-accueil2.png);
 
             background-position: center;
             background-size: cover;
@@ -297,6 +307,9 @@ body{
     }
     .section-apropos{
         height: 100vh;
+        background: url(/build/static/bg-apropos.png);
+        background-size: cover;
+        background-position: center;
         padding: 0;
         @media (max-width: 575px) {
         height: auto;
@@ -315,6 +328,7 @@ body{
         padding: 20px;
         }
         .presentation{
+            color: #fff;
             @media (max-width: 575px) {
             max-width: 100%;
             margin-top: 5vh;
@@ -498,6 +512,9 @@ body{
     .titre-page-projets{
         height: 100vh;
         width: 100%;    
+        background: url(/build/static/bg-projet.jpeg);
+        background-size: cover;
+        background-position: center;
         @media (max-width: 575px) { 
     
 
@@ -569,76 +586,11 @@ body{
         }
     }
   
-    .section-projet{
-        iframe{
-            height: 80vh !important;
-            width: 70vw !important;
-            margin-top: 20vh;
-            margin-bottom: 10vh;
+    .section-projets{
+        height: 100vh;
+        .img-projet{
+            height: 200px;
+            width: auto;
         }
-        .expo-projet{
-            margin-top: 7vh;
-            margin-bottom: 10vh;
-            padding: 0;
-            .description-projet{
-                width: 100%;
-                h4{
-                    font-size:3rem;
-                    margin-top: 5vh;
-                    margin-bottom: 3vh;
-                    color: #188cc3;
-                    @media (max-width: 575px) { 
-                        font-size: 1.5rem;
-                     }
-                     @media (min-width: 576px) and (max-width: 767px) { 
-                        font-size: 1.5rem;
-                    }
-                    @media (min-width: 768px) and (max-width: 991px) { 
-                        font-size: 1.5rem;
-                       }
-                       @media (min-width: 992px) and (max-width: 1199px) { 
-                        font-size: 1.5rem;
-                    }
-                }
-                p{
-                    font-size:1.5rem;
-                    margin-bottom: 3vh;
-                    max-width: 40vw;
-                    text-align: justify;
-                    color: #6d7179;
-                    @media (max-width: 575px) { 
-                        max-width: 80vw;
-                        font-size: 1rem;
-                     }
-                     @media (min-width: 576px) and (max-width: 767px) { 
-                        max-width: 80vw;
-                        font-size: 1rem;
-                    }
-                    @media (min-width: 768px) and (max-width: 991px) { 
-                        max-width: 80vw;
-                        font-size: 1rem;
-                       }
-                       @media (min-width: 992px) and (max-width: 1199px) { 
-                        max-width: 80vw;
-                        font-size: 1rem;
-                    }
-                }
-                .language{
-                    color: #188cc3;
-                }
-                .github { 
-                    text-decoration: none;
-                    color: black;
-                    transition: .3s;
-                    &:hover{
-                        transform: scale(1.15);
-                        color: rgb(0, 129, 189);
-                    }
-                    i{
-                        font-size: 3rem;
-                    }
-                }
-            }
-        } 
     }
 }  
