@@ -1,6 +1,4 @@
 require('../scss/app.scss');
-// const $ = require('jquery');
-// require('bootstrap');
 
 // transition sur la redirection de mon liens d'ancrage
 console.log("hey");
@@ -14,22 +12,25 @@ $(document).ready(function() {
         $('.mynav').removeClass('scrolled');
       }
     });
-    $(".my-pic").click(function(){
-        $(".my-pic").fadeOut("slow", function(){
-            $('.qualitees').fadeIn('slow');
-            $(".qualitees").css('display', "block");
-            $(".my-pic").css('display', "none");
-        });
-        console.log("img");
-    });
-    $(".qualitees").click(function(){
-        $(".qualitees").fadeOut("slow", function(){
-            $('.my-pic').fadeIn('slow');
-            $(".my-pic").css('display', "block");
-            $(".qualitees").css('display', "none");
-        });
-        console.log("qua");
-    });
+    // $(".my-pic").click(function(){
+    //     $(".my-pic").fadeOut("slow", function(){
+    //         $('.qualitees').fadeIn('slow');
+    //         $(".qualitees").css('display', "block");
+    //         $(".my-pic").css('display', "none");
+    //     });
+    //     $(".my-pic").css('display', "block");
+    //     console.log("img");
+    // });
+    // $(".qualitees").click(function(){
+    //     $(".qualitees").fadeOut("slow", function(){
+    //         $('.my-pic').fadeIn('slow');
+    //         $(".my-pic").css('display', "block");
+    //         $(".qualitees").css('display', "none");
+                        
+
+    //     });
+    //     console.log("qua");
+    // });
   });
 
 (function() {
@@ -86,78 +87,3 @@ $(document).ready(function() {
     };
 })();
 
-const monmenu = document.querySelector(".showmenu");
-const divmenu = document.querySelector(".menu");
-const monhamberger = document.querySelector(".hamburger");
-const close = document.querySelector(".closeBtn");
-const closemenuaccueil = document.querySelector(".accueil");
-const closemenuprojets = document.querySelector(".projets");
-const closemenuapropos = document.querySelector(".apropos");
-const closemenucontact = document.querySelector(".contact");
-
-// monhamberger.addEventListener("click", function(showmenu){
-//        document.querySelector(".showmenu").style.top = "0vh";
-//     //    document.querySelector(".menu").style.display = "block";
-//        // document.querySelector(".hamburger").style.display = "none";
-//  })
-//  close.addEventListener("click", function(hidemenu){
-//         document.querySelector(".showmenu").style.top = "-150vh";
-//  })
-//  closemenuaccueil.addEventListener("click", function(hidemenu){
-//      document.querySelector(".showmenu").style.top = "-150vh";
-//  })
-//  closemenuprojets.addEventListener("click", function(hidemenu){
-//     document.querySelector(".showmenu").style.top = "-150vh";
-// })
-//  closemenuapropos.addEventListener("click", function(hidemenu){
-//      document.querySelector(".showmenu").style.top = "-150vh";
-//  })
-
- // sticky menu
-
-//  $(document).ready(function() {
-//  window.addEventListener('scroll', function () {
-//   if (window.pageYOffset >= 50) {
-//     $(".portfolio-nav").css("position", "sticky");
-//     $(".portfolio-nav").css("box-shadow", "0px 1px 11px 0px rgba(0,0,0,0.22)");
-//     $(".portfolio-nav").css("background", "linear-gradient(#fff, #ffffffbf)");
-//   } else {
-//     $(".portfolio-nav").css("position", "absolute");
-//     $(".portfolio-nav").css("box-shadow", "none");
-//     $(".portfolio-nav").css("background", "none");
-
-//   }
-// });
-// });
-
-
-
-  // dashboard
-
-
-//change hambuger menu color on red when i'm on section-appli
-// var fullScreen = $(window).height();  
-// $(document).ready(function(){
-//    $(window).scroll(function(){
-//       var scroll = $(window).scrollTop();
-//       if (scroll > fullScreen) {
-//         $(".btn-menu").css("backgroundColor" , "#a70000fa");
-//       }
-//       else{
-//          $(".btn-menu").css("backgroundColor" , "white");  	
-//       }
-//    })
-//  })
-
-//  window.onresize = function(event) {
-//    $(window).scroll(function(){
-//       var scroll = $(window).scrollTop();
-//       if (scroll > fullScreen) {
-//         $(".btn-menu").css("backgroundColor" , "#a70000fa");
-//       }
-//       else{
-//          $(".btn-menu").css("backgroundColor" , "white");  	
-//       }
-//    })
-// };
- 

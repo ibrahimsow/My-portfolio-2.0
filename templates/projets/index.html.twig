@@ -53,27 +53,27 @@
     </div>
     </header>    
         <a href="#header"><i class="fas fa-chevron-up"></i></a> 
-        <div class="titre-page-projets d-flex flex-column justify-content-center align-items-center">
+        <div class="titre-page-projets d-flex flex-column justify-content-center align-items-center" >
                 <h2  class="text-center" data-aos="fade-right" data-aos-duration="2000" >Projets</h2>
                 <h3 class="text-center" data-aos="zoom-in" data-aos-duration="2000" >Sites Web | Maquettes | Articles</h3>
                 <a class="down" href="#projet"><i class="fas fa-chevron-down"></i></a> 
         </div>
-        <section class="section-projets p-5 container d-flex flex-wrap justify-content-center">
-             {% for projet in projets %}
-        <div class="m-5" data-aos="fade-up" data-aos-duration="1500"> 
-            <a href="{{ projet.url }}" target="blank">
-                <img src="{{ projet.image }}" alt="projet" class="img-projet">
-            </a> 
-            <div class="description-projet d-flex flex-column justify-content-center align-items-center">
-                <div>
-                    <h4 data-aos="fade-up">{{ projet.title }}</h4>
-                    <p>{{ projet.createdAt | date('d/m/Y') }}</p>
-                    <p>{{ projet.description | raw }}</p>
-                    <a data-aos="fade-up" href="{{ projet.git }}" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-github"></i><span class="text-git">Voir le projet sur github</span></a>
-                </div>
+        <section class="section-projets p-5 container-fluid d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-duration="1500" id="projet">
+                {% for projet in projets %}
+            <div class="m-5" data-aos="fade-up" data-aos-duration="1500"> 
+                <a href="{{ projet.url }}" target="blank">
+                    <img src="{{ projet.image }}" alt="projet" class="img-projet">
+                </a> 
+                {# <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                    <div>
+                        <h4 data-aos="fade-up">{{ projet.title }}</h4>
+                        <p>{{ projet.createdAt | date('d/m/Y') }}</p>
+                        <p>{{ projet.description | raw }}</p>
+                        <a data-aos="fade-up" href="{{ projet.git }}" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-github"></i><span class="text-git">Voir le projet sur github</span></a>
+                    </div>
+                </div> #}
             </div>
-        </div>
-        {% endfor %}
+            {% endfor %}
         </section>
     {# <section class="section-projet container-fluid flex-column d-flex justify-content-center align-items-center" id="projet">
         {% for projet in projets %}
