@@ -9,12 +9,21 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
     header {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 10;
-    
+        .navbar{
+            display: none;
+            @media (max-width: 991px) { 
+                display: flex;
+                .navbar-nav{
+                    height: 110vh;
+                }
+             }
+        }
       
       @supports (position: sticky) {
         body {
@@ -29,9 +38,13 @@ body{
 
       .mynav {
         position: relative;
-        height: 80px;
+        height: 10vh;
         width: 100%;
         transition: 0.5s ease;
+        display: block !important;
+            @media (max-width: 991px) { 
+                display: none !important;
+             }
       }
       
       .mynav .nav {
@@ -306,7 +319,7 @@ body{
             }
     }
     .section-apropos{
-        height: 100vh;
+        height: 80vh;
         background: url(/build/static/bg-apropos.png);
         background-size: cover;
         background-position: center;
@@ -350,11 +363,10 @@ body{
                 margin-bottom: 5vh;
             }
             h1{
-                font-size: 3rem;
+                font-size: 4rem;
                 letter-spacing: 2px;
                 font-weight: 800;
                 margin-bottom: 3vh;
-                .w{   font-size: 3.2rem;}
                 @media (max-width: 575px) {
                 font-size: 2rem;
                 }
@@ -370,7 +382,7 @@ body{
             }
             .bio{
                 text-align: justify;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 max-width: 80%;
             }
             .linkedin{
@@ -459,7 +471,14 @@ body{
             }
         }
     }
-
+    .parallax-accueil{
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background:  url(/build/static/repo.jpeg);
+        background-attachment: fixed;
+        background-position: center;
+    }
     .section-language{
         h4{
             font-size: 3.5rem;
@@ -562,7 +581,7 @@ body{
     .titre-page-projets{
         height: 100vh;
         width: 100%;    
-        background: url(/build/static/bg-projet.jpeg);
+        // background: url(/build/static/bg-projet.jpeg);
         background-size: cover;
         background-position: center;
         @media (max-width: 575px) { 
@@ -579,9 +598,10 @@ body{
 
         }
         h2{
-            font-size: 5rem;
+            font-size: 13rem;
             font-weight: 800;
-            letter-spacing: 10px;
+            letter-spacing: -5px;
+            padding-bottom: 2vh;
             @media (max-width: 575px) { 
                 font-size: 3rem;
              }
@@ -596,7 +616,7 @@ body{
             }
         }
         h3{
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             @media (max-width: 575px) { 
                 font-size: 1.2rem;
              }
@@ -613,9 +633,10 @@ body{
         .down{
             text-decoration: none;
             color: black;
+            position: relative;
+            top: 10vh;
             .fa-chevron-down{
                 font-size: 2rem;
-                padding-top: 25vh;
                 transition: .8s;
                 animation: go-down 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
             }
@@ -635,7 +656,13 @@ body{
             }
         }
     }
-  
+    .parallax-projet{
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background:  url(/build/static/parallax-projet.jpeg);
+        background-attachment: fixed;
+    }
     .section-projets{
         padding-top: 10vh;
         padding-bottom: 10vh;

@@ -6,31 +6,18 @@ AOS.init();
 
 $(document).ready(function() {
     $(window).on('scroll', function() {
-      if (Math.round($(window).scrollTop()) > 100) {
+      if (Math.round($(window).scrollTop()) > 10) {
         $('.mynav').addClass('scrolled');
       } else {
         $('.mynav').removeClass('scrolled');
       }
     });
-    // $(".my-pic").click(function(){
-    //     $(".my-pic").fadeOut("slow", function(){
-    //         $('.qualitees').fadeIn('slow');
-    //         $(".qualitees").css('display', "block");
-    //         $(".my-pic").css('display', "none");
-    //     });
-    //     $(".my-pic").css('display', "block");
-    //     console.log("img");
-    // });
-    // $(".qualitees").click(function(){
-    //     $(".qualitees").fadeOut("slow", function(){
-    //         $('.my-pic').fadeIn('slow');
-    //         $(".my-pic").css('display', "block");
-    //         $(".qualitees").css('display', "none");
-                        
-
-    //     });
-    //     console.log("qua");
-    // });
+    $(window).scroll(function(){
+        var scroll_position = $(window).scrollTop()/5;
+        $('.parallax').css({
+            'background-position-x' : - scroll_position + 'px',
+        })
+    })
   });
 
 (function() {

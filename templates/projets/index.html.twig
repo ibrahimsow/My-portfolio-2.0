@@ -58,20 +58,21 @@
                 <h3 class="text-center" data-aos="zoom-in" data-aos-duration="2000" >Sites Web | Maquettes | Articles</h3>
                 <a class="down" href="#projet"><i class="fas fa-chevron-down"></i></a> 
         </div>
+        <section class="parallax parallax-projet"></section>
         <section class="section-projets p-5 container-fluid d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-duration="1500" id="projet">
                 {% for projet in projets %}
             <div class="m-5" data-aos="fade-up" data-aos-duration="1500"> 
                 <a href="{{ projet.url }}" target="blank">
                     <img src="{{ projet.image }}" alt="projet" class="img-projet">
                 </a> 
-                {# <div class="description-projet d-flex flex-column justify-content-center align-items-center">
+                <div class="description-projet d-flex flex-column justify-content-center align-items-center">
                     <div>
                         <h4 data-aos="fade-up">{{ projet.title }}</h4>
                         <p>{{ projet.createdAt | date('d/m/Y') }}</p>
                         <p>{{ projet.description | raw }}</p>
                         <a data-aos="fade-up" href="{{ projet.git }}" target="blank" rel="noopener noreferrer" class="github text-center d-flex flex-column"><i class="fab fa-github"></i><span class="text-git">Voir le projet sur github</span></a>
                     </div>
-                </div> #}
+                </div>
             </div>
             {% endfor %}
         </section>
@@ -93,14 +94,28 @@
         {% endfor %}
     </section> #}
 
-    <footer class="section-footer container-fluid flex-column d-flex justify-content-center align-items-center" id="footer">
-        <h4 class="text-center" data-aos="fade-down">Suivez moi sur les réseaux</h4>
+      <footer class="section-footer container-fluid d-flex justify-content-around align-items-center" id="footer">
+    <div class="d-flex flex-column justify-content-center align-items-start">
+        <h5 data-aos="fade-down" class="newsletter text-center mb-3">Newsletter</h5>
+        <label for="email">Email</label>
+       <input type="email" name="email" id="">
+       <div class="mt-2 d-flex justify-content-center align-items-center">
+        <input type="radio" name="rgpd" id="rgpd" class="mr-2"> 
+        <label for="rgbd" class="text-rgpd m-0">J'accepte de recevoir l'actualité du portfolio</label>
+        </div>
+        <button class="mt-4 btn btn-success">Suivre</button>
+    </div>
+    <div class="flex-column d-flex justify-content-center align-items-center">
+        <h5 data-aos="fade-down" class="text-center">Suivez moi sur les réseaux</h5>
         <div class="icone d-flex flex-wrap">
             <a href="https://www.linkedin.com/in/ibrahim-sow-7a404110b/" target="blank"> <i class="fab fa-linkedin"></i></a> 
             <a href="https://www.instagram.com/ibrahimsow.sow2018/" target="blank"> <i class="fab fa-instagram"></i></a> 
             <a href="#" target="blank"> <i class="fab fa-twitter"></i></a> 
             <a href="https://www.youtube.com/channel/UC-zraEFposlll-aoV6K4sqw?view_as=subscriber" target="blank"> <i class="fab fa-youtube"></i></a> 
         </div>
-        <p>Tous droits réservés SOW Ibrahim © 2018</p>
+    </div>
     </footer> 
+    <div class="container-fluid d-flex justify-content-center align-items-center copyright">
+        <p>Tous droits réservés ©2019 fait avec <i class="far fa-heart"></i> par Ibrahim Sow</p>
+    </div>
 {% endblock %}
