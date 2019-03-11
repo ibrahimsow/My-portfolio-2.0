@@ -107,7 +107,7 @@ body{
         height: 10vh; 
         background-color: rgba(0, 0, 0, 0.54);
         transition: 0.5s ease;
-      
+        overflow: hidden;
       }
       
       
@@ -500,6 +500,23 @@ body{
         }
     }
     .section-language{
+        padding: 20vh 2vw;
+        @media (max-width: 575px) {
+            padding: 20vh 0vw;
+
+            }
+            @media (min-width: 576px) and (max-width: 767px) { 
+            padding: 20vh 0vw;
+
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+            padding: 20vh 0vw;
+
+            }
+            @media (min-width: 992px) and (max-width: 1199px) { 
+            padding: 20vh 2vw;
+
+            }
         h4{
             font-size: 3.5rem;
             font-weight: 700;

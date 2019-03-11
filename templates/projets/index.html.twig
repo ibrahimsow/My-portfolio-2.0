@@ -59,7 +59,7 @@
                 <a class="down" href="#projet"><i class="fas fa-chevron-down"></i></a> 
         </div>
         <section class="parallax parallax-projet"></section>
-        <section class="section-projets p-5 container-fluid d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-duration="1500" id="projet">
+        {# <section class="section-projets p-5 container-fluid d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-duration="1500" id="projet">
                 {% for projet in projets %}
             <div class="m-5" data-aos="fade-up" data-aos-duration="1500"> 
                 <a href="{{ projet.url }}" target="blank">
@@ -75,8 +75,8 @@
                 </div>
             </div>
             {% endfor %}
-        </section>
-    {# <section class="section-projet container-fluid flex-column d-flex justify-content-center align-items-center" id="projet">
+        </section> #}
+    <section class="section-projet container-fluid flex-column d-flex justify-content-center align-items-center" id="projet">
         {% for projet in projets %}
         <div class="container expo-projet row d-flex justify-content-center align-items-center " data-aos="fade-up" data-aos-duration="1500"> 
             <a href="{{ projet.url }}" target="blank">
@@ -92,7 +92,7 @@
             </div>
         </div>
         {% endfor %}
-    </section> #}
+    </section>
 
       <footer class="section-footer container-fluid d-flex justify-content-around align-items-center" id="footer">
     <div class="d-flex flex-column justify-content-center align-items-start">
