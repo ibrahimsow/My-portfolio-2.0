@@ -1,5 +1,7 @@
 @import 'dash';
 @import 'contact';
+@import 'projets';
+// @import 'normalize';
 
 body{
     margin: 0;
@@ -612,102 +614,6 @@ body{
         p{
             padding: 25px;
             margin: 0 !important;
-        }
-    }
-    // page prjets
-    .titre-page-projets{
-        height: 100vh;
-        width: 100%;    
-        // background: url(/build/static/bg-projet.jpeg);
-        background-size: cover;
-        background-position: center;
-        @media (max-width: 575px) { 
-    
-
-         }
-         @media (min-width: 576px) and (max-width: 767px) { 
-
-        }
-        @media (min-width: 768px) and (max-width: 991px) { 
-
-           }
-           @media (min-width: 992px) and (max-width: 1199px) { 
-
-        }
-        h2{
-            font-size: 13rem;
-            font-weight: 800;
-            letter-spacing: -5px;
-            padding-bottom: 2vh;
-            @media (max-width: 575px) { 
-                font-size: 3rem;
-             }
-             @media (min-width: 576px) and (max-width: 767px) { 
-                font-size: 3.5rem;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-                font-size: 4rem;
-               }
-               @media (min-width: 992px) and (max-width: 1199px) { 
-                font-size: 4rem;
-            }
-        }
-        h3{
-            font-size: 1.8rem;
-            @media (max-width: 575px) { 
-                font-size: 1.2rem;
-             }
-             @media (min-width: 576px) and (max-width: 767px) { 
-                font-size: 1.3rem;
-            }
-            @media (min-width: 768px) and (max-width: 991px) { 
-                font-size: 1.5rem;
-               }
-               @media (min-width: 992px) and (max-width: 1199px) { 
-                font-size: 1.5rem;
-            }
-        }
-        .down{
-            text-decoration: none;
-            color: black;
-            position: relative;
-            top: 10vh;
-            .fa-chevron-down{
-                font-size: 2rem;
-                transition: .8s;
-                animation: go-down 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-            }
-            @keyframes go-down {
-                0% {
-                transform: scale(1);
-                opacity: 0;
-                }
-                50% {
-                transform: scale(1.05);   
-                opacity: 1;
-                    }
-                100% {
-                transform: scale(1);
-                opacity: 0;
-                }
-            }
-        }
-    }
-    .parallax-projet{
-        position: relative;
-        width: 100%;
-        height: 60vh;
-        background:  url(/build/static/parallax-projet.jpeg);
-        background-attachment: fixed;
-    }
-    .section-projets{
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-        background-color: #efefef;
-        .img-projet{
-            height: 55vh;
-            width: auto;
-            // box-shadow: 0px 1px 20px #00000069;
         }
     }
 }  

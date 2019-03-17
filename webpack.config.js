@@ -21,6 +21,8 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    .addEntry('jquery.mixitup.min', './assets/js/jquery.mixitup.min.js')
+
     //.addEntry('page2', './assets/js/page2.js')
 
     // will require an extra script tag for runtime.js
